@@ -25,13 +25,21 @@
                         </tr>
                         </thead>
                         <tbody>
-                        <?php foreach ($table_body as $data_row) : ?>
+                            <?php 
+                                foreach ($table_body as $data_row) : 
+                            ?>
                             <tr>
-                                <?php foreach ($data_row as $data_column) : ?>
+                                <?php 
+                                    foreach ($data_row as $data_column) : 
+                                ?>
                                     <td><?= esc($data_column) ?></td>
-                                <?php endforeach ?>
+                                <?php 
+                                    endforeach 
+                                ?>
                             </tr>
-                        <?php endforeach ?>
+                            <?php 
+                                endforeach 
+                            ?>
                         </tbody>
                     </table>
                 </div>
